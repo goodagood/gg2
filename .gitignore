@@ -8,6 +8,7 @@ bower_components/
 .*.swp
 #*.swo
 
+*.pyc
 
 # Logs
 logs
