@@ -20,23 +20,34 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.static(path.join(__dirname, 'node_modules'))); //indev
+
 //var index = require('./routes/index');
 //var users = require('./routes/users');
 //app.use('/', index);
 //app.use('/users', users);
 
 
+// before all routes
+app.get('/before', function(req, res){
+    res.end(`<h1> before all routes</h1><h2> ${Date()} </h2>`);
+});
+
 
 const filter = require("ip.path.403");
 const opt = {
-    patterns: [/.+communist.+/, /secret/],
+    patterns: [/.+weakpoint.+/, /secret/],
 };
 app.use(filter(opt));
 
+// sys value
+const sysvalue = require("./thumbs.value.route/sysvalue.js");
+app.use('/sysvalue', sysvalue);
 
 app.get('/hi', function(req, res){
     res.end(`<h1> hi ${Date()} </h1>`);
 });
+
 
 
 // catch 404 and forward to error handler

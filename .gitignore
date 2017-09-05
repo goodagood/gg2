@@ -2,6 +2,7 @@
 
 node_modules/
 dist/
+ui8/dist/
 bower_components/
 # vim swap files:
 *~
