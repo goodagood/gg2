@@ -1,0 +1,15 @@
+
+# global npm installs:
+
+    nodemon, express-generator, gulp, ...
+
+
+# npm link:
+
+    cd ip.path.403
+    npm install
+    npm link
+    cd #node express server dir
+    npm link ip.path.403
+
+
