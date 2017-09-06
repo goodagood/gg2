@@ -34,16 +34,20 @@ app.get('/before', function(req, res){
 });
 
 
+// filter out bad requests, many from North Korea, China
 const filter = require("ip.path.403");
 const opt = {
-    patterns: [/.+weakpoint.+/, /secret/],
+    patterns: [/54.168.214.184/, /pma20/i, /phpmyadmin/i],
 };
 app.use(filter(opt));
+
 
 // sys value
 const sysvalue = require("./thumbs.value.route/sysvalue.js");
 app.use('/sysvalue', sysvalue);
 
+
+// simple response to check routing ok.
 app.get('/hi', function(req, res){
     res.end(`<h1> hi ${Date()} </h1>`);
 });
