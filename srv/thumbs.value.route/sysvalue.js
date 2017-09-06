@@ -11,7 +11,7 @@ var db2fake = require('./db.mongo/db2.fake.js');
 
 
 router.get('/', function (req, res) {
-  res.send('routes for db2 ')
+  res.send('routes for sysvalue, submodule for thumbs and values')
 });
 
 
@@ -76,7 +76,7 @@ router.post('/update', function (req, res) {
 
 
 router.post('/fake.thumb', function (req, res) {
-    console.log('db2/fake.thumb: ', req.body);
+    console.log('sysvalue, /fake.thumb: ', req.body);
 
     db2fake.fakeAddThumb(req.body.id, req.body.isUp).then(function(backJson){
         console.log(backJson);

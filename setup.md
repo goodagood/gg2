@@ -17,3 +17,8 @@ so, we registered as 'gg', in sub folders using node.js
 we should be able to do:
 
     var something = require('gg/sub/folder/something.js')
+
+
+# global npm install
+
+nodemon, gulp-cli, express-generator    

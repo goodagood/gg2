@@ -6,10 +6,13 @@
 
 # npm link:
 
+ip.path.403, ui.vv    
+
     cd ip.path.403
     npm install
     npm link
     cd #node express server dir
     npm link ip.path.403
+
 
 

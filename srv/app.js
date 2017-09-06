@@ -37,15 +37,16 @@ app.get('/before', function(req, res){
 // filter out bad requests, many from North Korea, China
 const filter = require("ip.path.403");
 const opt = {
-    patterns: [/54.168.214.184/, /pma20/i, /phpmyadmin/i],
+    patterns: [/54.168.214.184/, /pma20/i, /phpmyadmin/i, /phpmanager/i],
 };
 app.use(filter(opt));
 
 
-// sys value
-const sysvalue = require("./thumbs.value.route/sysvalue.js");
+// // sys value
+// const sysvalue = require("./thumbs.value.route/sysvalue.js");
+// app.use('/sysvalue', sysvalue);
+const sysvalue = require("ui.vv/srv.express/thumbs.value/sysvalue.js");
 app.use('/sysvalue', sysvalue);
-
 
 // simple response to check routing ok.
 app.get('/hi', function(req, res){
@@ -66,6 +67,8 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  console.log(err);
 
   // render the error page
   res.status(err.status || 500);
