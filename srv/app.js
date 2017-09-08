@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var session = require("express-session");
+
 
 var app = express();
 
@@ -21,6 +23,22 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.static(path.join(__dirname, 'node_modules'))); //indev
+
+
+const MongoSessionStore = require("connect-mongo")(session);
+var connect = require("gg/dbs/mongo/connect.js"); //cc
+var mongoSessionStoreOption ={
+    dbPromise: connect.pool.getDb('gg'),
+    collection: 'session', // actually this is default.
+};
+var sessionOpt = {
+    secret: 'o/this-is-key-board#secreat@number0906',
+    store: new MongoSessionStore(mongoSessionStoreOption),
+    resave: false,
+    saveUninitialized: false,
+};
+app.use(session(sessionOpt));
+
 
 //var index = require('./routes/index');
 //var users = require('./routes/users');
@@ -45,12 +63,20 @@ app.use(filter(opt));
 // // sys value
 // const sysvalue = require("./thumbs.value.route/sysvalue.js");
 // app.use('/sysvalue', sysvalue);
-const sysvalue = require("ui.vv/srv.express/thumbs.value/sysvalue.js");
+// const sysvalue = require("ui.vv/srv.express/thumbs.value/sysvalue.js");
+
+// use the package aftern a couple of: npm link 
+// ~/workspace/ui.vv/srv.express/thumbs.value
+const sysvalue = require("thumbs.value/sysvalue.js");
 app.use('/sysvalue', sysvalue);
 
 // simple response to check routing ok.
-app.get('/hi', function(req, res){
-    res.end(`<h1> hi ${Date()} </h1>`);
+app.get('/after', function(req, res){
+    if(req.session){
+        req.session.foo = 'foo';
+        console.log(req.session);
+    }
+    res.end(`<h1> after, ${Date()} </h1><h2>session: ${req.session.toString()}</h2>`);
 });
 
 
