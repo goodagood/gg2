@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>goodogood - Andrew</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">goodogood </a></h1>
+                <nav><ul>
+                    <li><a href="/category/cn.html">cn</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/byte-valuemd.html">byte-value.md</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info --><p><img alt="bread pieces" src="/gglocal/bread-a.jpg"></p>
+<h1>Value of your codes</h1>
+<p>How much your software codes value?</p>
+<p>There are lot's of free codes to use. Should we think it's value as "0",
+because it's free so it's zero?</p>
+<p>Let's see, a gentleman share his food to others, it's his kindness and the
+food is free.  But the food actually keep it's value, it isn't down to "0".</p>
+<p>The same concept value should be kept for software codes.  Even we pay nothing
+to use it, it should has it's own value.</p>
+<p>Codes has value.  How to calculate the value?</p>
+<p>First, We need keep away from the concept of market prices, price in market
+means buyer is obliged to pay the amount in currency.  We value codes in
+senses of how much labor we put in, and how much benefits we get from it.
+When we think value this way, it remind us to respect those who contribute to
+make us get useful codes.</p>
+<p>Then we can try to write small price tags for codes, same as we are used to
+see in marketplaces.   This is a little bit controversial because we are
+trying to write price tag when we aren't in marketplace.</p>
+<p>Now, it's time to talk how much, we need number it.</p>
+<h1>One byte ten cents</h1>
+<p>How about 10 cents each byte?  it's one tenth of an US dollar.</p>
+<p>One byte values to ten cents.  Count all bytes includes comments, empty
+spaces, anything you typed in.  But be honestly count only your own words, not
+others.</p>
+<p>Why not to count lines of codes (LOC)?  LOC is widely used.  But because we
+can read the size of file more easier than count lines, so we can save trouble
+from counting lines by reading the size in bytes.</p>
+<p>The byte means a byte in ASCII codec, for example "a" is a byte, it's actually
+8 bits.  Byte is a natural unit in computer storage.  Nowdays, we use UTF-8
+encoding more often, it turns out to be compatible to ASCII encoding.  Beside
+English, UTF-8 supports nearly all human languages.</p>
+<p>When talk about value, there are more ways to count the value, for example,
+count it as hours of labor, man monthes, or instead just keep using LOC.  And
+value is not only produced by code-writters, actually, more value is
+contributed by those not programmers, such as organizers, designers,
+reviewers, other supporters and more.  Count them all if needed.</p>
+<h1>Put it in a JSON file</h1>
+<p>After we get value, write a json file as follow:</p>
+<div class="highlight"><pre><span></span>{
+    &quot;value&quot;:     22.00,
+    &quot;who&quot;:       &quot;My-name-is-gg-cat&quot;,
+    &quot;what&quot;:      &quot;a few php files set up a blog&quot;,
+    &quot;when&quot;:      &quot;2015 11-23 19:18&quot;,
+
+    &quot;and&quot;:       &quot;all the rest are optional :)&quot;,
+    &quot;key&quot;:       &quot;value of key&quot;,
+    &quot;attribute&quot;: &quot;value of the attribute&quot;,
+
+    &quot;description&quot;:   &quot;.....&quot;,
+    &quot;for-what&quot;:      &quot;a file (foo.c) doing some hello world print demo in project&quot;
+
+    &quot;currency&quot;:      &quot;USD&quot;,
+    &quot;more-things&quot;:   &quot;more is you want&quot;,
+    &quot;more&quot;:          &quot;... ...&quot;
+}
+</pre></div>
+
+
+<p>Using JSON file will make things simple for programmers who has already know
+it.  It's kind of standart data structure, easy to learn and easy to use.  It
+can be processed by almost all programming languages.  Put a single json
+object in the file closed by a pair of "{}", it can describe the value of
+codes.</p>
+<p>The first 3 attributes is mandatary: value, who (user-id), what and when, the
+unit of the value defaults to US dollar.  All the rest keys, values are
+optional, it give chances to make thing more clear if you add more attributes.</p>
+<p>Then upload the json file to user "jobs", he will do the file keeping things.</p>
+<p>At last we value codes, use json file to save data of value.  But thing will
+not stop, it always moving forward.  Value is going to change, it keep
+changing all the time.  Even price of gold changes in market, in history,
+value can not be fix to a number.  And keep in mind that, when we talk about
+code's value, we need to know huge part of value come from those who are not
+programmer.  </p>
+<h1>Conclusions</h1>
+<p>We try to set up a simple approach to measure value of software codes, this
+should be helpful to improve software projects.  The picture can be broad and
+deep when there're actually many roles and labors involved.  Still we want
+keep it simple:</p>
+<div class="highlight"><pre><span></span>1, measure value data
+2, write json file and upload it
+</pre></div>
+
+
+<p>We tried to make it easy to claim value, at least in our system. But,
+there is no attempt to make the process accurate or make it close to
+marketplace exchangeable.</p>
+<p><img alt="small bread" src="/gglocal/bread-300.jpg"></p>
+<h1>Links</h1>
+<p>a <a href="http://goodagood.blogspot.com/2015/12/byte-value.html">backup link</a></p>
+<!--
+backup link: http://goodagood.blogspot.com/2015/12/byte-value.html
+
+vim: set ft=markdown tw=78:
+-->                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/clean-claimmd.html" rel="bookmark"
+                           title="Permalink to clean-claim.md">clean-claim.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h1>Claim negative values</h1>
+<p>You can get rich if they are dirty.  It ask for nothing but a camera.  The
+cameras is common nowadays, it's 2015 and many mobile phones get two cameras
+with them.  Then use any camera to capture dirty behaviours, then claim a
+negative value for it.  Seriously …</p>
+                <a class="readmore" href="/clean-claimmd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/code-valuemd.html" rel="bookmark"
+                           title="Permalink to code-value.md">code-value.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h1>Value of your codes</h1>
+<p>How much your software codes value?</p>
+<p>We got a lot of free codes to use. Should we think it's value as "0", because
+it's free?</p>
+<p>A gentleman share his food to others, it's his kindness and the food is free.
+But the food keep it's value …</p>
+                <a class="readmore" href="/code-valuemd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/intromd.html" rel="bookmark"
+                           title="Permalink to intro.md">intro.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <hr />
+
+<h1>A file system as interface to internet</h1>
+<p>I am trying to set up a file system as interface between myself and the
+internet.  Firstly, because working with file is easier for more kind of
+tasks.  Secondly, because web interface is still lacking flexiblities.  It
+should work in middle, all types …</p>
+                <a class="readmore" href="/intromd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/intromd__cn.html" rel="bookmark"
+                           title="Permalink to intro.md__cn">intro.md__cn</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/cn.html">cn</a>.</p>
+
+</footer><!-- /.post-info -->                <p>2016 01-01 12:26</p>
+<p>如果你在听，我们在说软件，是电脑软件。
+准确一点说是网络软件，是一个可以接口网络的文件系统。</p>
+<p>我做了一个文件系统，用来改变人类。
+或者谦虚一点地说，是用来改变我接触人类社会的方法。</p>
+<p>这个文件系统是做为我和外界的接口，
+可以用来收集文件、分享文件，
+可以记录数据，收集工作或者设计内容，
+还可以做为通讯工具，做为电话、语音、视频和会议
+也还可以做为关系组织工具、联系朋友、团队、群组， 等等。</p>
+<p>为什么文件系统可以做到这么多， 甚至更多？</p>
+<p>因为文件，逻辑计算中的文件，本来就是一种天才的工程概念，
+它可以存储各种数据，然后进行处理。
+被技术史上的天才用来做各种疯狂的事情，并且漂亮的做到了，
+就是用文件做为一种工程概念。
+概念可以反映现实，对吗？</p>
+<p>然而，我这样尝试的更重要的原因，却是因为人体工学。
+因为有太多的手腕、肩膀和腰部已经劳损，成为附在许多人体上的痛苦源泉。
+这也是拜许多愚蠢的软件和网络输入界面之福，
+拜可耻的商业软件制作人的无知。
+这些软件工作界面、网络界面，不符合人体工程学 …</p>
+                <a class="readmore" href="/intromd__cn.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/negativemd.html" rel="bookmark"
+                           title="Permalink to negative.md">negative.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h1>Negative value</h1>
+<p>The negative means it's opposite to the positive value.  For positive value, a
+buyer might pay out cashes to get the value from it's holder.  For negative
+value, it should be reversed, the value holder should pay out in some way, to
+the value claimers.</p>
+<p>Most times we …</p>
+                <a class="readmore" href="/negativemd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/reasonsmd.html" rel="bookmark"
+                           title="Permalink to reasons.md">reasons.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <hr />
+
+<h2>A File System as Interface to Internet</h2>
+<p>This might be stupid.</p>
+<p>I am trying to set up a file system, I want to use it as interface between
+myself and the modern web.  </p>
+<p>Web UI was not ergonomically designed.  Long time using of web UI make
+shoulder and back pains …</p>
+                <a class="readmore" href="/reasonsmd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/startmd.html" rel="bookmark"
+                           title="Permalink to start.md">start.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <hr />
+
+<h1>If we value files</h1>
+<p>If we value files, we are going to come across questions as:</p>
+<div class="highlight"><pre><span></span>What&#39;s value
+What&#39;s money
+</pre></div>
+
+
+<p>No simple answer can be accepted by all.  It's something we think we know.
+Then there would be times we find out that we can't give the answer …</p>
+                <a class="readmore" href="/startmd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/test24md.html" rel="bookmark"
+                           title="Permalink to test24.md">test24.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h1>some relative links</h1>
+<p><a href="./intro.md">dot relative</a></p>
+<!--
+2015 1223 14:04pm
+vim: set ft=markdown tw=78:
+-->
+                <a class="readmore" href="/test24md.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/valuemd.html" rel="bookmark"
+                           title="Permalink to value.md">value.md</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-10T10:09:33+02:00">
+                Published: Tue 10 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/andrew.html">Andrew</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <hr />
+
+<p>Each file can has an value attribute, we can value it as 2 cents or any other
+value.</p>
+<h1>When we deal with value itself</h1>
+<p>When we want claim a value seperatly, let"s put value as json data.  json is
+simple data structure for every one, it looks as a …</p>
+                <a class="readmore" href="/valuemd.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
