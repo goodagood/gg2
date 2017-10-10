@@ -1,0 +1,270 @@
+{
+    "SpecialKey": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "Question": {
+        "background-color": "inherit",
+        "color": "#CBCBCB"
+    },
+    "Structure": {
+        "background-color": "inherit",
+        "color": "#74A7CA"
+    },
+    "CursorIM": {
+        "background-color": "#afafd4",
+        "color": "#191919"
+    },
+    "Repeat": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "Operator": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "Type": {
+        "background-color": "inherit",
+        "color": "#74A7CA"
+    },
+    "Function": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "DiffDelete": {
+        "background-color": "#9E5A77",
+        "color": "#191919"
+    },
+    "MoreMsg": {
+        "background-color": "inherit",
+        "color": "#8E78B8"
+    },
+    "Normal": {
+        "background-color": "#191919",
+        "color": "#A5BBB5"
+    },
+    "DiffText": {
+        "background-color": "#42799D",
+        "color": "#191919"
+    },
+    "VisualNOS": {
+        "background-color": "#4E4E4E",
+        "color": "#191919"
+    },
+    "Boolean": {
+        "background-color": "inherit",
+        "color": "#32867F"
+    },
+    "ErrorMsg": {
+        "background-color": "#AFAFD4",
+        "color": "#9E5A77"
+    },
+    "Tag": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "Directory": {
+        "background-color": "inherit",
+        "color": "#5B8EBF"
+    },
+    "PreProc": {
+        "background-color": "inherit",
+        "color": "#62B5AF"
+    },
+    "Folded": {
+        "background-color": "#42799D",
+        "color": "#42424B"
+    },
+    "Delimiter": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "Number": {
+        "background-color": "inherit",
+        "color": "#32867F"
+    },
+    "Macro": {
+        "background-color": "inherit",
+        "color": "#62B5AF"
+    },
+    "CursorLine": {
+        "background-color": "#1E1E1E",
+        "color": "inherit"
+    },
+    "Conditional": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "DiffChange": {
+        "background-color": "#735B9C",
+        "color": "#191919"
+    },
+    "IncSearch": {
+        "background-color": "#9E5A77",
+        "color": "#191919"
+    },
+    "Exception": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "Constant": {
+        "background-color": "inherit",
+        "color": "#32867F"
+    },
+    "PreCondit": {
+        "background-color": "inherit",
+        "color": "#62B5AF"
+    },
+    "Visual": {
+        "background-color": "#4E4E4E",
+        "color": "#191919"
+    },
+    "Identifier": {
+        "background-color": "inherit",
+        "color": "#65B5B5"
+    },
+    "ModeMsg": {
+        "background-color": "inherit",
+        "color": "#8E78B8"
+    },
+    "Pmenu": {
+        "background-color": "#1E1E1E",
+        "color": "inherit"
+    },
+    "MatchParen": {
+        "background-color": "#afafd4",
+        "color": "inherit"
+    },
+    "NonText": {
+        "background-color": "inherit",
+        "color": "#407998"
+    },
+    "Include": {
+        "background-color": "inherit",
+        "color": "#62B5AF"
+    },
+    "PmenuSel": {
+        "background-color": "#348686",
+        "color": "inherit"
+    },
+    "Keyword": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "Search": {
+        "background-color": "#9E5A77",
+        "color": "#191919"
+    },
+    "Todo": {
+        "background-color": "inherit",
+        "color": "#9E5A77"
+    },
+    "WarningMsg": {
+        "background-color": "#4E4E4E",
+        "color": "#191919"
+    },
+    "Define": {
+        "background-color": "inherit",
+        "color": "#62B5AF"
+    },
+    "SpecialComment": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "StorageClass": {
+        "background-color": "inherit",
+        "color": "#74A7CA"
+    },
+    "Underlined": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "String": {
+        "background-color": "inherit",
+        "color": "#32867F"
+    },
+    "CursorColumn": {
+        "background-color": "#1E1E1E",
+        "color": "inherit"
+    },
+    "StatusLineNC": {
+        "background-color": "#424242",
+        "color": "#191919"
+    },
+    "WildMenu": {
+        "background-color": "#32867F",
+        "color": "#191919"
+    },
+    "Cursor": {
+        "background-color": "#afafd4",
+        "color": "#191919"
+    },
+    "Comment": {
+        "background-color": "inherit",
+        "color": "#4E4E4E"
+    },
+    "Debug": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "Label": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "StatusLine": {
+        "background-color": "#424242",
+        "color": "#A5BBB5"
+    },
+    "DiffAdd": {
+        "background-color": "#348686",
+        "color": "#191919"
+    },
+    "FoldColumn": {
+        "background-color": "#42799D",
+        "color": "#42424B"
+    },
+    "LineNr": {
+        "background-color": "inherit",
+        "color": "#4C4E4C"
+    },
+    "Title": {
+        "background-color": "inherit",
+        "color": "#9378BE"
+    },
+    "Float": {
+        "background-color": "inherit",
+        "color": "#32867F"
+    },
+    "TypeDef": {
+        "background-color": "inherit",
+        "color": "#74A7CA"
+    },
+    "Character": {
+        "background-color": "inherit",
+        "color": "#32867F"
+    },
+    "Special": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "SpecialChar": {
+        "background-color": "inherit",
+        "color": "#AFAFD4"
+    },
+    "Ignore": {
+        "background-color": "inherit",
+        "color": "#4C4E4C"
+    },
+    "Statement": {
+        "background-color": "inherit",
+        "color": "#486981"
+    },
+    "Error": {
+        "background-color": "inherit",
+        "color": "#4C4E4C"
+    },
+    "VertSplit": {
+        "background-color": "#424242",
+        "color": "inherit"
+    }
+}

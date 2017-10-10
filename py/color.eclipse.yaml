@@ -1,0 +1,96 @@
+Comment:
+    background-color: bg
+    color: '#236e25'
+Constant:
+    background-color: bg
+    color: '#00884c'
+Cursor:
+    background-color: '#8040ff'
+    color: inherit
+CursorIM:
+    background-color: '#8040ff'
+    color: '#ffffff'
+DiffAdd:
+    background-color: '#e7e7ff'
+    color: blue
+DiffChange:
+    background-color: '#ffe7e7'
+    color: black
+DiffDelete:
+    background-color: '#e7e7ff'
+    color: bg
+DiffText:
+    background-color: '#ffd0d0'
+    color: red
+Directory:
+    background-color: '#eeeeee'
+    color: inherit
+Error:
+    background-color: '#4040ff'
+    color: '#f8f8f8'
+ErrorMsg:
+    background-color: '#4040ff'
+    color: inherit
+FoldColumn:
+    background-color: '#e7e7e7'
+    color: '#6b6b6b'
+Folded:
+    background-color: '#fff0d0'
+    color: '#804030'
+Identifier:
+    background-color: bg
+    color: '#b07800'
+Ignore:
+    background-color: bg
+    color: bg
+IncSearch:
+    background-color: '#f0c0ff'
+    color: inherit
+ModeMsg:
+    background-color: bg
+    color: inherit
+NonText:
+    background-color: bg
+    color: inherit
+Normal:
+    background-color: '#ffffff'
+    color: '#000000'
+Number:
+    background-color: bg
+    color: '#0000ff'
+PreProc:
+    background-color: bg
+    color: '#683821'
+Question:
+    background-color: bg
+    color: '#8000ff'
+Special:
+    background-color: bg
+    color: '#8040f0'
+Statement:
+    background-color: bg
+    color: '#b64f90'
+StatusLine:
+    background-color: '#4570aa'
+    color: '#ffffff'
+StatusLineNC:
+    background-color: '#75a0da'
+    color: '#ffffff'
+Title:
+    background-color: '#ffc0a0'
+    color: inherit
+Todo:
+    background-color: white
+    color: '#ff5050'
+Type:
+    background-color: bg
+    color: '#7f0055'
+Underlined:
+    background-color: bg
+    color: inherit
+VertSplit:
+    background-color: '#904838'
+    color: '#f8f8f8'
+WildMenu:
+    background-color: '#ff3030'
+    color: '#f8f8f8'

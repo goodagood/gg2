@@ -1,0 +1,201 @@
+Boolean:
+    background-color: inherit
+    color: '#32867F'
+Character:
+    background-color: inherit
+    color: '#32867F'
+Comment:
+    background-color: inherit
+    color: '#4E4E4E'
+Conditional:
+    background-color: inherit
+    color: '#486981'
+Constant:
+    background-color: inherit
+    color: '#32867F'
+Cursor:
+    background-color: '#afafd4'
+    color: '#191919'
+CursorColumn:
+    background-color: '#1E1E1E'
+    color: inherit
+CursorIM:
+    background-color: '#afafd4'
+    color: '#191919'
+CursorLine:
+    background-color: '#1E1E1E'
+    color: inherit
+Debug:
+    background-color: inherit
+    color: '#AFAFD4'
+Define:
+    background-color: inherit
+    color: '#62B5AF'
+Delimiter:
+    background-color: inherit
+    color: '#AFAFD4'
+DiffAdd:
+    background-color: '#348686'
+    color: '#191919'
+DiffChange:
+    background-color: '#735B9C'
+    color: '#191919'
+DiffDelete:
+    background-color: '#9E5A77'
+    color: '#191919'
+DiffText:
+    background-color: '#42799D'
+    color: '#191919'
+Directory:
+    background-color: inherit
+    color: '#5B8EBF'
+Error:
+    background-color: inherit
+    color: '#4C4E4C'
+ErrorMsg:
+    background-color: '#AFAFD4'
+    color: '#9E5A77'
+Exception:
+    background-color: inherit
+    color: '#486981'
+Float:
+    background-color: inherit
+    color: '#32867F'
+FoldColumn:
+    background-color: '#42799D'
+    color: '#42424B'
+Folded:
+    background-color: '#42799D'
+    color: '#42424B'
+Function:
+    background-color: inherit
+    color: '#AFAFD4'
+Identifier:
+    background-color: inherit
+    color: '#65B5B5'
+Ignore:
+    background-color: inherit
+    color: '#4C4E4C'
+IncSearch:
+    background-color: '#9E5A77'
+    color: '#191919'
+Include:
+    background-color: inherit
+    color: '#62B5AF'
+Keyword:
+    background-color: inherit
+    color: '#486981'
+Label:
+    background-color: inherit
+    color: '#486981'
+LineNr:
+    background-color: inherit
+    color: '#4C4E4C'
+Macro:
+    background-color: inherit
+    color: '#62B5AF'
+MatchParen:
+    background-color: '#afafd4'
+    color: inherit
+ModeMsg:
+    background-color: inherit
+    color: '#8E78B8'
+MoreMsg:
+    background-color: inherit
+    color: '#8E78B8'
+NonText:
+    background-color: inherit
+    color: '#407998'
+Normal:
+    background-color: '#191919'
+    color: '#A5BBB5'
+Number:
+    background-color: inherit
+    color: '#32867F'
+Operator:
+    background-color: inherit
+    color: '#486981'
+Pmenu:
+    background-color: '#1E1E1E'
+    color: inherit
+PmenuSel:
+    background-color: '#348686'
+    color: inherit
+PreCondit:
+    background-color: inherit
+    color: '#62B5AF'
+PreProc:
+    background-color: inherit
+    color: '#62B5AF'
+Question:
+    background-color: inherit
+    color: '#CBCBCB'
+Repeat:
+    background-color: inherit
+    color: '#486981'
+Search:
+    background-color: '#9E5A77'
+    color: '#191919'
+Special:
+    background-color: inherit
+    color: '#AFAFD4'
+SpecialChar:
+    background-color: inherit
+    color: '#AFAFD4'
+SpecialComment:
+    background-color: inherit
+    color: '#AFAFD4'
+SpecialKey:
+    background-color: inherit
+    color: '#AFAFD4'
+Statement:
+    background-color: inherit
+    color: '#486981'
+StatusLine:
+    background-color: '#424242'
+    color: '#A5BBB5'
+StatusLineNC:
+    background-color: '#424242'
+    color: '#191919'
+StorageClass:
+    background-color: inherit
+    color: '#74A7CA'
+String:
+    background-color: inherit
+    color: '#32867F'
+Structure:
+    background-color: inherit
+    color: '#74A7CA'
+Tag:
+    background-color: inherit
+    color: '#AFAFD4'
+Title:
+    background-color: inherit
+    color: '#9378BE'
+Todo:
+    background-color: inherit
+    color: '#9E5A77'
+Type:
+    background-color: inherit
+    color: '#74A7CA'
+TypeDef:
+    background-color: inherit
+    color: '#74A7CA'
+Underlined:
+    background-color: inherit
+    color: '#486981'
+VertSplit:
+    background-color: '#424242'
+    color: inherit
+Visual:
+    background-color: '#4E4E4E'
+    color: '#191919'
+VisualNOS:
+    background-color: '#4E4E4E'
+    color: '#191919'
+WarningMsg:
+    background-color: '#4E4E4E'
+    color: '#191919'
+WildMenu:
+    background-color: '#32867F'
+    color: '#191919'

@@ -3,6 +3,8 @@
 node_modules/
 dist/
 ui8/dist/
+es5ed/
+__pycache__/
 bower_components/
 # vim swap files:
 *~

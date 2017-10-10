@@ -10,7 +10,7 @@ change name to: gg
 
     npm link
 
-so, we registered as 'gg', in sub folders using node.js
+so, we registered as 'gg', change to sub folders using node.js
 
     npm link gg
 
@@ -22,3 +22,10 @@ we should be able to do:
 # global npm install
 
 nodemon, gulp-cli, express-generator    
+
+
+# firefox dev tools font size:
+
+about:config
+devtools.toolbox.zoomValue 
+
