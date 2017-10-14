@@ -1,7 +1,8 @@
 #!/bin/bash
 
-cd /home/za/workspace/ui.vv/srv.express/thumbs.value/ui8
+cd $HOME/workspace/ui.vv/srv.express/thumbs.value/ui8
 gulp build
-cd /home/za/workspace/gg2/srv
+cd $HOME/workspace/gg2/srv
+cp -r $HOME/workspace/ui.vv/srv.express/thumbs.value/ui8/dist  ./public/ui8/
 npm start
 

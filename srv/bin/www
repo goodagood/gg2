@@ -15,6 +15,8 @@ var http = require('http');
 var port = normalizePort(process.env.PORT || '9080');
 app.set('port', port);
 
+var portssl = normalizePort(process.env.PORTSSL || '9443');
+
 /**
  * Create HTTP server.
  */
@@ -28,6 +30,19 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+
+/*
+ * https
+ */
+
+// from plain/app.505 2017 1013
+var https_srv = require("gg/plain/myutils/https.js");
+https_srv.make_https_server(app).listen(port_ssl);
+console.log("app listen on port: ", port_ssl);
+
+
+
 
 /**
  * Normalize a port into a number, string, or false.

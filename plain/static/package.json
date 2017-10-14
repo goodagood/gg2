@@ -1,0 +1,42 @@
+{
+  "name": "static_or_front_end",
+  "version": "0.0.4",
+  "title": "static or front end of goodogood.me/goodagood.com",
+  "description": "static or front end of goodogood.me/goodagood.com ",
+  "keywords": [
+    "goodogood",
+    "front.end",
+    "static"
+  ],
+  "homepage": "https://github.com/goodagood/gg/plain/static",
+  "author": {
+    "name": "andrew",
+    "url": "http://goodogood.me"
+  },
+  "maintainers": [
+    {
+      "name": "andrew",
+      "url": "http://goodogood.me"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodagood/gg/plain/static"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "http://www.opensource.org/licenses/GPL"
+    }
+  ],
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "grunt": "~0.4.2",
+    "grunt-bump-build-git": "~1.1.1",
+    "grunt-contrib-jshint": "~0.8.0"
+  },
+  "dependencies": {
+    "marked": "^0.3.5",
+    "mdi": "^1.6.50"
+  }
+}

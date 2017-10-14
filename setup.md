@@ -19,6 +19,12 @@ we should be able to do:
     var something = require('gg/sub/folder/something.js')
 
 
+## ui.vv
+
+    # npm link/npm link thumbs.value
+    ~/workspace/ui.vv/srv.express/thumbs.value
+
+
 # global npm install
 
 nodemon, gulp-cli, express-generator    

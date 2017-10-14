@@ -1,0 +1,192 @@
+2017 0902
+
+    for the front end, as thumbs and value system.
+    current using ui8/
+        bootstrap@4.0
+        font-awesome
+
+    install by npm , so make node_modules public accessible as express static
+
+    using:
+        mongodb: ggsys, collection: words
+    db access is moved into folder together with the route:
+        route:  
+            plain/thumbs.value/sysvalue.js
+        db api for the routes: 
+            plain/thumbs.value/db.mongo/*js
+    front end is static, but neet gulp/bable/sass:
+            plain/public/ui8/
+
+
+2017 0505
+
+    start to add value for system itself.
+    use the same mongodb, it should on 54.250.20.232
+    db: ggsys
+    //collection: value
+    collection: words
+
+2016-0408
+    soft link from node_modules of js root, 
+        node_modules/gg --> ../
+        #ie: gg/plain/node_modules/gg --> gg/plain
+        #so: js codes in gg/plain
+        #can be logically required without a lot ../../..
+
+    our codes can be required by:
+        require("gg/sub-moduel/sub-sub-moduel/file-name")
+        # check plain/s3/c-gg-link.js
+
+
+2015-0516
+    listor anyway, folder tool list, folder/file settings.
+
+2015-0419
+    Got to be killed, time up, game over.    
+2015-0322
+---------
+    folder save_meta not really save, locker make it happen? 
+
+0731
+----
+    i18next, http://i18next.com/index.html
+    can do simple i18n, it's nice.
+
+0614
+----
+    app.327.js is current server
+    The limits of s3 storage is not going to show up before 1000 files for each
+    user.
+
+0530
+----
+
+    to review:
+        adduser, add-folder, list2, upfile,
+        change: treeview, cwd
+
+0529
+----
+
+    'cwd' will not has `username` prefix. 0529? 
+    0530, change tree of home dir structure to have an username?
+
+in app.js:
+ssl.com signed certifaction:  /var/my-certs/ssl.com.signed/
+sqlite3 db:  /var/goodagood/local.sqlite3
+
+initiate sqlite3 database:  
+
+    cd  myblueimp
+    node local-info.js
+
+
+2014 0323
+=========
+
+
+This is try to glue:
+    
+    passport for authentication
+    blueimp file uploader
+    s3 bucket for file storage
+    and more
+
+do it with javascript node.js, express.js
+
+./app.js  for passport
+
+
+2014 0325
+=========
+
+Change because Express 4.0 upgrading: Session backed by Redis need 
+express-session now.  To make things more complex, there is another package: 
+express-sessions, the name is a plural.  I am trying to use the first: 
+express-session.
+
+0326
+====
+
+./blueimp/server0307.js  for fileuploading, server.
+    node  ./server0307.js
+
+0327
+
+After fiddling quite a while, I decide to try to fix on express 3.x, and
+connect-redis 1.4.7
+
+0331
+when npm install get blocked by China Gov. set it to use another registry:
+
+  npm config set registry http://registry.npmjs.eu
+
+0415
+
+Map the local folder to s3 bucket: /public/ggfsa  ->  s3://ggfsa
+  yas3fs  [-df]  s3://ggfsa  /public/ggfsa
+
+0419
+
+bower might give wrong with handlebars.js
+
+0503
+
+Try npm install connect-ensure-login
+
+
+# nodes
+    
+
+avoiding ../../../../../../..
+
+Not everything in an application properly belongs on the public npm and the overhead of setting up a private npm or git repo is still rather large in many cases. Here are some approaches for avoiding the ../../../../../../../ relative paths problem.
+node_modules
+
+People sometimes object to putting application-specific modules into node_modules because it is not obvious how to check in your internal modules without also checking in third-party modules from npm.
+
+The answer is quite simple! If you have a .gitignore file that ignores node_modules:
+
+node_modules
+
+You can just add an exception with ! for each of your internal application modules:
+
+node_modules/*
+!node_modules/foo
+!node_modules/bar
+
+Please note that you can't unignore a subdirectory, if the parent is already ignored. So instead of ignoring node_modules, you have to ignore every directory inside node_modules with the node_modules/* trick, and then you can add your exceptions.
+
+Now anywhere in your application you will be able to require('foo') or require('bar') without having a very large and fragile relative path.
+
+If you have a lot of modules and want to keep them more separate from the third-party modules installed by npm, you can just put them all under a directory in node_modules such as node_modules/app:
+
+node_modules/app/foo
+node_modules/app/bar
+
+Now you will be able to require('app/foo') or require('app/bar') from anywhere in your application.
+
+In your .gitignore, just add an exception for node_modules/app:
+
+node_modules/*
+!node_modules/app
+
+If your application had transforms configured in package.json, you'll need to create a separate package.json with its own transform field in your node_modules/foo or node_modules/app/foo component directory because transforms don't apply across module boundaries. This will make your modules more robust against configuration changes in your application and it will be easier to independently reuse the packages outside of your application.
+symlink
+
+Another handy trick if you are working on an application where you can make symlinks and don't need to support windows is to symlink a lib/ or app/ folder into node_modules. From the project root, do:
+
+ln -s ../lib node_modules/app
+
+and now from anywhere in your project you'll be able to require files in lib/ by doing require('app/foo.js') to get lib/foo.js.
+custom paths
+
+You might see some places talk about using the $NODE_PATH environment variable or opts.paths to add directories for node and browserify to look in to find modules.
+
+Unlike most other platforms, using a shell-style array of path directories with $NODE_PATH is not as favorable in node compared to making effective use of the node_modules directory.
+
+This is because your application is more tightly coupled to a runtime environment configuration so there are more moving parts and your application will only work when your environment is setup correctly.
+
+node and browserify both support but discourage the use of $NODE_PATH.
+
+
