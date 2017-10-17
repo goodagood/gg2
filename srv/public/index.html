@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- As temperory testing for ui styling and login page. 0203, 2015
+     Finally, each page got more and more re-writing.    0201, 2016
+-->
+<head>
+<meta http-equiv="content-type" content="text/html" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="login, goodogood/goodagood" />
+<meta name="keywords" content="goodogood, goodagood, filesystem, sharing" />
+<meta name="author"   content="Andrew">
+
+<link rel="stylesheet" href="/blueimp-gallery/css/blueimp-gallery.min.css">
+
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css" >
+
+<title> 
+
+    goodogood
+
+</title>
+
+<!--
+<link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap-glyphicons.css">
+-->
+
+<link rel="stylesheet" href="/normalize.css/normalize.css">
+<link rel="stylesheet" href="/skeleton-css/css/skeleton.css">
+
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="stylesheets/login.css">
+
+
+<style type="text/css">
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow:hidden;
+    height:100px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="topnav" id="w3topnav">
+  <div class="logo">goodogood</div>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="w3topnavFun()">&#9776;</a>
+</div>
+
+<div id="wrapper" class="container">
+
+
+    <!--
+  <header style="diaplay:none;">
+    <div> <span class="logo"> <a href="http://goodogood.me/">goodogood</a> <span></div>
+
+    <div id="register">
+      <a id="register-a" href="/user/slow-home"> 
+        <i class="fa fa-user"></i> Register </a>
+    </div>
+    <a href="#goodogood">goodogood</a>
+  </header>
+    -->
+
+
+  <!--
+  {{#if user }}
+  <p>{{{ user }}}</p>
+  {{/if}}
+  -->
+
+  <form action="/login" method="post" accept-charset="UTF-8">
+    <div class="igroup">
+      <label for="username"> 
+        <span class="label-text ggtt" data-ggtt="username">User name:</span>
+      </label>
+      <input type="text" id="username" name="username" />
+    </div>
+
+    <div class="igroup" id="normal-password-div">
+      <label for="password" id="normal-pass"> 
+        <span class="password-label ggtt" data-ggtt="password"> PassWord:</span>
+        <span id="normal-show" class="hint"></span>
+      </label>
+      <input type="password" id="password" name="password" />
+    </div>
+
+    <!--
+    <div class="igroup" id="text-password-div">
+      <label for="text-password" class="clr" id="show-pass">
+        <span class="text-password-label"> Password:</span>
+      </label>
+      <input type="text" id="text-password" name="text-password" />
+    </div>
+    -->
+
+    <div class="igroup">
+      <label for="submit" class="ggtt" data-ggtt="login">Login:</label>
+      <input id="submit" name="submit" type="submit" value="Login"/>
+    </div>
+  </form>
+
+  <!--
+  {{#if message }}
+  <p class="message">{{{ message }}}</p>
+  {{/if}}
+  -->
+
+  <div id='try-before-register'>
+    <p>
+      <a class="button" href="/try-before-register"> <i class="fa fa-beer"> </i> Try an public test account</a>
+      : You will be login as an random user,  to play
+      in the system, and get the feel whether it can help.
+    </p>
+  </div>
+
+  <!-- disable before deploy
+  <div id="other-id">
+    <a class="btn" href="/auth/google"> <i class="fa fa-google"> </i> google </a>
+    <a class="btn" href="/auth/facebook"> <i class="fa fa-facebook"> </i> facebook </a>
+    <a class="btn" href="/auth/yahoo"> <i class="fa fa-yahoo"> </i> yahoo </a>
+  </div>
+  -->
+
+  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+
+  <!--
+
+/my/pic/a.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-10-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-11-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-12-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-13-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-14-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-15-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-16-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-17-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-18-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-19-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-1-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-20-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-21-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-22-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-23-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-24-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-25-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-26-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-27-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-28-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-29-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-2-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-30-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-3-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-4-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-5-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-6-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-7-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-8-.jpg
+/my/pic/beautiful-and-amazing-animals-and-birds-wallpapers-9-.jpg
+/my/pic/chess-2730034_1920.jpg
+/my/pic/pizza-2802332_1920.jpg
+/my/pic/thumb
+
+  -->
+  <div id="galleryLinks" class="full-width">
+    <a href="/pic/pizza-2802332_1920.jpg" title="Apple">
+      <img src="/pic/thumb/pizza-2802332_1920.jpg" alt="Apple">
+    </a>
+    <a href="/pic/chess-2730034_1920.jpg" title="Orange">
+      <img src="/pic/thumb/chess-2730034_1920.jpg" alt="Orange">
+    </a>
+
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-1-.jpg"
+      title="1">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-1-.jpg"
+       alt="1">
+    </a>
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-2-.jpg"
+      title="2">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-2-.jpg"
+       alt="2">
+    </a>
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-3-.jpg"
+      title="3">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-3-.jpg"
+       alt="3">
+    </a>
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-4-.jpg"
+      title="4">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-4-.jpg"
+       alt="4">
+    </a>
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-5-.jpg"
+      title="5">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-5-.jpg"
+       alt="5">
+    </a>
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-6-.jpg"
+      title="6">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-6-.jpg"
+       alt="6">
+    </a>
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-7-.jpg"
+      title="7">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-7-.jpg"
+       alt="7">
+    </a>
+
+
+    <!--
+    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-9-.jpg"
+      title="9">
+      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-9-.jpg"
+       alt="9">
+    </a>
+    -->
+  </div>
+
+
+
+  <footer>
+    <p>
+      goodogood, goodagood, Andrew, &copy; 2015(678)
+    </p>
+    <p>
+      <!--
+      <p data-i18n="testi18n" id="ptesti18n">
+        test i18n
+      </p>
+      <a href="/file/get/intro/public/test0215/y6.0216/i0212y6.html" class="button"> Basic info.</a>
+      <a href="/file/md-with-local-files/intro/public/intro.md" class="button"> Background info.</a>
+
+      !!2017 0603
+
+      <a href="https://github.com/chimpsland/story/blob/master/10m/01.txt"
+        class="button" target="_blank"> 
+        137亿年 </a>
+      <a href="https://github.com/goodagood/chimp.land/blob/master/001.txt"  
+        class="button" target="_blank"> 
+        Chimp's Land 猩猩国度 </a>
+      -->
+      <a href="https://github.com/goodagood/gg"
+        class="button" target="_blank"> 
+        Codes </a>
+      <a href="/static/gg.intro/md.html" class="button"> Introductions </a>
+      <a href="/my.md/index.html" class="button"> Intro. </a>
+      <a href="https://github.com/goodagood/story/blob/master/y10m/a.markdown"  
+        class="button" target="_blank"> 
+        Chinses history of when and where i made the site</a>
+    </p>
+    <p>
+    <h1> qr <a href="goodogood.com/">goodogood.com</a> </h1>
+     <img src="images/qr.goodogood.com.600.jpeg" alt="qr_goodogood_com"  
+             style="max-height:80%;max-width:80%;height:auto;width:auto;"
+     > 
+    </p>
+     <hr />
+     <h1>digit url 214 184 </h1>
+    <p>
+     <img src="images/qr.600.54.168.214.184.jpeg"
+             style="max-height:80%;max-width:80%;height:auto;width:auto;"
+           alt="qr_214_184" > 
+
+    </p>
+
+  </footer>
+
+
+</div> <!-- end of wrapper -->
+
+<!--
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="/static/js/jquery.inspect.js"></script>
+-->
+
+
+<script src="/jquery/dist/jquery.min.js"></script>
+<!--  <script src="/static/js/i18next-1.7.3.js"></script>  
+<script src="/static/bower_components/i18next/i18next.min.js"></script>
+<script src="/static/js/text-trans.js"></script>
+<script src="/js/text-trans.js"></script>
+-->
+<script src="/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+
+<script>
+document.getElementById('galleryLinks').onclick = function (event) {
+  event = event || window.event;
+  var target = event.target || event.srcElement,
+  link = target.src ? target.parentNode : target,
+  options = {index: link, event: event},
+  links = this.getElementsByTagName('a');
+  blueimp.Gallery(links, options);
+};
+</script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+-->
+
+<!--[if lt IE 9]>
+<script src="/static/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!--% if(typeof script != 'undefined' && script) print(script); %-->
+
+</body>
+<!-- vim: et ts=2 sw=2 tw=150
+-->
+</html>
+
+

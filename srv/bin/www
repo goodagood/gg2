@@ -38,8 +38,8 @@ server.on('listening', onListening);
 
 // from plain/app.505 2017 1013
 var https_srv = require("gg/plain/myutils/https.js");
-https_srv.make_https_server(app).listen(port_ssl);
-console.log("app listen on port: ", port_ssl);
+https_srv.make_https_server(app).listen(portssl);
+console.log("app also listen on port: ", portssl);
 
 
 
