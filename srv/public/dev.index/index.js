@@ -1,4 +1,8 @@
 
+const $ = require("jquery");
+const pcolor = require("../mycolor.js");
+
+
 function w3topnavFun() {
   var x = document.getElementById("w3topnav");
   if (x.className === "topnav") {
@@ -7,6 +11,18 @@ function w3topnavFun() {
     x.className = "topnav";
   }
 }
+
+document.getElementById('w3topnavSwitch').onclick = w3topnavFun;
+document.getElementById('randomColor').onclick = function(e){
+    e.preventDefault();
+    pcolor.randomBodyColor();
+};
+document.getElementById('textColor').onclick = function(e){
+    e.preventDefault();
+    pcolor.rollBodyForeground();
+};
+
+
 
 $( document ).ready(function() {
     //console.log( (this == $ ? 'yes' : 'no') );

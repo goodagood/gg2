@@ -15,24 +15,16 @@
 
 <link rel="stylesheet" href="/blueimp-gallery/css/blueimp-gallery.min.css">
 
-<link rel="stylesheet" type="text/css" href="stylesheets/index.css" >
-
-<title> 
-
-    goodogood
-
-</title>
-
-<!--
-<link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap-glyphicons.css">
--->
 
 <link rel="stylesheet" href="/normalize.css/normalize.css">
 <link rel="stylesheet" href="/skeleton-css/css/skeleton.css">
 
 <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 
+<link rel="stylesheet" type="text/css" href="stylesheets/index.css" >
+<!--
 <link rel="stylesheet" href="stylesheets/login.css">
+-->
 
 
 <style type="text/css">
@@ -43,20 +35,37 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+
   overflow:hidden;
-    height:100px;
+  height:100px;
 }
 </style>
 
+
+<title> 
+    goodogood
+</title>
+
+<!--
+<link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap-glyphicons.css">
+-->
+
 </head>
+
+
 <body>
 
 <div class="topnav" id="w3topnav">
   <div class="logo">goodogood</div>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="w3topnavFun()">&#9776;</a>
+  <a href="javascript:void(0)" id="randomColor">Random color</a>
+  <a href="javascript:void(0)" id="textColor">Text color</a>
+  <a href="javascript:void(0)">Menu None </a>
+  <a href="javascript:void(0);"
+     style="font-size:15px;"
+     id="w3topnavSwitch"
+     class="icon"
+     onclick="w3topnavFun()"
+    >&#9776;</a>
 </div>
 
 <div id="wrapper" class="container">
@@ -241,8 +250,10 @@
 
   <footer>
     <p>
-      goodogood, goodagood, Andrew, &copy; 2015(678)
+      goodogood, goodagood, Andrew, &copy; 2015(678) <br />
+      <span id="colorInfo"> </span>
     </p>
+
     <p>
       <!--
       <p data-i18n="testi18n" id="ptesti18n">
@@ -269,22 +280,24 @@
         class="button" target="_blank"> 
         Chinses history of when and where i made the site</a>
     </p>
-    <p>
-    <h1> qr <a href="goodogood.com/">goodogood.com</a> </h1>
-     <img src="images/qr.goodogood.com.600.jpeg" alt="qr_goodogood_com"  
-             style="max-height:80%;max-width:80%;height:auto;width:auto;"
-     > 
-    </p>
-     <hr />
-     <h1>digit url 214 184 </h1>
-    <p>
-     <img src="images/qr.600.54.168.214.184.jpeg"
-             style="max-height:80%;max-width:80%;height:auto;width:auto;"
-           alt="qr_214_184" > 
-
-    </p>
-
   </footer>
+
+  <div>
+  <h1> qr <a href="goodogood.com/">goodogood.com</a> </h1>
+  <img src="images/qr.goodogood.com.600.jpeg" alt="qr_goodogood_com"  
+        style="max-height:80%;max-width:80%;height:auto;width:auto;"
+  > 
+
+  </div>
+  <hr />
+  <h1>digit url 214 184 </h1>
+  <div>
+  <img src="images/qr.600.54.168.214.184.jpeg"
+       style="max-height:80%;max-width:80%;height:auto;width:auto;"
+       alt="qr_214_184" > 
+
+  </div>
+
 
 
 </div> <!-- end of wrapper -->
@@ -304,7 +317,7 @@
 -->
 <script src="/blueimp-gallery/js/blueimp-gallery.min.js"></script>
 
-<script src="/js/index.js"></script>
+<script src="./bundle.js"></script>
 
 
 <script>
