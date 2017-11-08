@@ -1,10 +1,12 @@
 
 var path = require('path');
+var os   = require('os');
 
 var locations = {};
 var conf      = {};
 
-locations.credential_dir = "/home/ubuntu/workspace/gg-credentials/";
+//locations.credential_dir = "/home/ubuntu/workspace/gg-credentials/";
+locations.credential_dir = path.join(os.homedir(), 'workspace/gg-credentials/');
 
 
 /*

@@ -16,8 +16,6 @@ var method_override = require('method-override');
 var cel  = require('connect-ensure-login');
   
 
-// the old config-mj.js:
-//var myconfig =  require("./config/config.js");
 var pages    =  require("./config/pages.js");
 
 var port = 9090, port_ssl = 9099;

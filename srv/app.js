@@ -58,7 +58,7 @@ const filter = require("ip.path.403");
 const opt = {
     patterns: [/54.168.214.184/, 
     /pma20/i, /phpmyadmin/i, /phpmanager/i,
-    /myadmin/i
+    /myadmin/i, /\.php/i
     ],
 };
 app.use(filter(opt));
