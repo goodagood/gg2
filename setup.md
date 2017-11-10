@@ -24,6 +24,11 @@ we should be able to do:
     # npm link/npm link thumbs.value
     ~/workspace/ui.vv/srv.express/thumbs.value
 
+## page.color
+    cd ~/workspace/page.color
+    npm link
+    cd ~/workspace/gg2/srv
+    npm link page.color
 
 # global npm install
 

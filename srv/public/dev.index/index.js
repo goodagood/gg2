@@ -1,6 +1,8 @@
 
 const $ = require("jquery");
-const pcolor = require("../mycolor.js");
+
+//const pcolor = require("../mycolor.js");
+const pcolor = require("page.color/mycolor.js");
 
 
 function w3topnavFun() {
