@@ -64,41 +64,41 @@
 
 <body>
 
-<div class="topnav" id="w3topnav">
-  <div class="logo">goodogood</div>
-  <a href="javascript:void(0)" id="randomColor">Random color</a>
-  <a href="javascript:void(0)" id="textColor">Text color</a>
-  <a href="./index.cn.html" id="index-cn-link"> 中文 </a>
-  <a href="javascript:void(0);"
-     style="font-size:15px;"
-     id="w3topnavSwitch"
-     class="icon"
-     onclick="w3topnavFun()"
-    >&#9776;</a>
-</div>
+<nav id="fix-top">
+  <div class="topnav" id="w3topnav">
+    <div class="logo">
+      <a href="goodogood.com" class="ggcom">goodogood</a>
+    </div>
+    <a href="javascript:void(0)" id="randomColor">Color</a>
+    <a href="javascript:void(0)" id="textColor" class="opt">Text color</a>
+
+    <!--<a href="./index.cn.html" id="index-cn-link"> 中文 </a>-->
+    <a href="./index.cn.html" id="index-cn-link"> 中文 </a>
+
+    <a href="javascript:void(0)"
+       id="increaseBodyFontSizeNavItem"
+      > Z+ </a>
+
+    <a href="javascript:void(0)"
+       id="decreaseBodyFontSizeNavItem"
+      > z- </a>
+
+    <a href="javascript:void(0);"
+       style="font-size:15px;"
+       id="w3topnavSwitch"
+       class="icon opt"
+       onclick="w3topnavFun()"
+      >&#9776;</a>
+  </div>
+</nav>
 
 <div id="wrapper" class="container">
 
 
-    <!--
-  <header style="diaplay:none;">
-    <div> <span class="logo"> <a href="http://goodogood.me/">goodogood</a> <span></div>
-
-    <div id="register">
-      <a id="register-a" href="/user/slow-home"> 
-        <i class="fa fa-user"></i> Register </a>
-    </div>
-    <a href="#goodogood">goodogood</a>
-  </header>
-    -->
-
-
-  <!--
-    
-    intro begin -->
   <div id="intro">
+  <!--intro begin-->
 
-<p>Title: intro
+  <p>Title: intro
 Author: Andrew</p>
 <hr />
 
@@ -205,8 +205,11 @@ are, we want to keep your job's value.</p>
 <!--
 2015 1223 14:04pm
 vim: set ft=markdown tw=78:
--->intro end
-  -->
+-->
+
+  <!--intro end-->
+  </div>
+
 
   <form action="/login" method="post" accept-charset="UTF-8">
     <div class="igroup">
@@ -240,9 +243,6 @@ vim: set ft=markdown tw=78:
   </form>
 
   <!--
-  {{#if message }}
-  <p class="message">{{{ message }}}</p>
-  {{/if}}
   -->
 
   <div id='try-before-register'>
@@ -261,7 +261,7 @@ vim: set ft=markdown tw=78:
   </div>
   -->
 
-  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+  <!-- The Gallery as lightbox dialog, should be a child element of the document body 
   <div id="blueimp-gallery" class="blueimp-gallery">
     <div class="slides"></div>
     <h3 class="title"></h3>
@@ -271,6 +271,7 @@ vim: set ft=markdown tw=78:
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
   </div>
+  -->
 
   <!--
 
@@ -309,7 +310,6 @@ vim: set ft=markdown tw=78:
 /my/pic/pizza-2802332_1920.jpg
 /my/pic/thumb
 
-  -->
   <div id="galleryLinks" class="full-width">
     <a href="/pic/pizza-2802332_1920.jpg" title="Apple">
       <img src="/pic/thumb/pizza-2802332_1920.jpg" alt="Apple">
@@ -355,14 +355,8 @@ vim: set ft=markdown tw=78:
     </a>
 
 
-    <!--
-    <a href="/pic/beautiful-and-amazing-animals-and-birds-wallpapers-9-.jpg"
-      title="9">
-      <img src="/pic/thumb/beautiful-and-amazing-animals-and-birds-wallpapers-9-.jpg"
-       alt="9">
-    </a>
-    -->
   </div>
+  -->
 
 
 
@@ -406,15 +400,17 @@ vim: set ft=markdown tw=78:
   <div>
   <h1> qr <a href="goodogood.com/">goodogood.com</a> </h1>
   <img src="images/qr.goodogood.com.600.jpeg" alt="qr_goodogood_com"  
+        class="qr-img"
         style="max-height:80%;max-width:80%;height:auto;width:auto;"
   > 
 
   </div>
   <hr />
-  <h1>digit url 214 184 </h1>
+  <h1>digital url 214 184 </h1>
   <div>
   <img src="images/qr.600.54.168.214.184.jpeg"
        style="max-height:80%;max-width:80%;height:auto;width:auto;"
+       class="qr-img"
        alt="qr_214_184" > 
 
   </div>
@@ -442,14 +438,14 @@ vim: set ft=markdown tw=78:
 
 
 <script>
-document.getElementById('galleryLinks').onclick = function (event) {
-  event = event || window.event;
-  var target = event.target || event.srcElement,
-  link = target.src ? target.parentNode : target,
-  options = {index: link, event: event},
-  links = this.getElementsByTagName('a');
-  blueimp.Gallery(links, options);
-};
+//document.getElementById('galleryLinks').onclick = function (event) {
+//  event = event || window.event;
+//  var target = event.target || event.srcElement,
+//  link = target.src ? target.parentNode : target,
+//  options = {index: link, event: event},
+//  links = this.getElementsByTagName('a');
+//  blueimp.Gallery(links, options);
+//};
 </script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -470,5 +466,4 @@ document.getElementById('galleryLinks').onclick = function (event) {
 <!-- vim: et ts=2 sw=2 tw=150
 -->
 </html>
-
 
