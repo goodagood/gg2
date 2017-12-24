@@ -1,17 +1,20 @@
 /*
 background-color: #becae3;
 color: #333333;
+
+mobile first means: change setting for big width later
 */
 body {
-  /*
-  margin:0;
-  */
-  background-color: white;
+  margin: 1px;
+  margin-top: 2px;
   color: black;
   background-color: white;
   font: 16px/1em 'PT Sans', sans-serif;
   text-align: center;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  display: block;
+  border: 3px solid green;
+  border-radius: 3px; }
 
 div.logo {
   margin-right: 2rem; }
@@ -23,31 +26,36 @@ nav#fix-top {
   /* fix top */
   position: fixed;
   /* Set the navbar to fixed position */
-  top: 0;
+  top: 0px;
   /* Position the navbar at the top of the page */
-  width: 100%;
+  left: 2px;
+  width: 99%;
   /* Full width */
-  z-index: 1;
+  z-index: 10;
   padding-left: 3px;
   padding-right: 3px;
-  padding-top: 1px;
+  padding-top: 1rem;
   padding-bottom: 1px; }
   nav#fix-top div.topnav {
     top: 0.3rem; }
   nav#fix-top a {
-    margin: 2px;
-    min-width: 5rem;
+    margin-right: 0.9rem;
+    min-width: 3rem;
+    padding: 1px;
+    padding-top: 3px;
     border-style: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: #999;
     border-radius: 3px;
     float: left;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: bold; }
   nav#fix-top a.ggcom {
     border: None;
-    float: left; }
+    float: left;
+    font-size: 1.1rem;
+    font-weight: bold; }
 
 nav#fix-top div {
   height: 2.5rem;
@@ -63,19 +71,25 @@ nav#fix-top div {
   background-color: #ddd;
   color: black; }
 
-@media screen and (max-width: 600px) {
-  nav#fix-top {
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */ }
-    nav#fix-top a {
-      min-width: 3rem; }
+.opt {
+  display: none; }
+
+div.logo {
+  margin-right: 0.8rem; }
+
+@media screen and (min-width: 640px) {
+  nav#fix-top a {
+    margin-left: 1rem;
+    min-width: 5rem; }
+  nav#fix-top a.ggcom {
+    float: left;
+    border: None;
+    margin-right: 2rem;
+    font-size: 2rem;
+    font-weight: bold; }
 
   .opt {
-    display: none; } }
+    display: inline-block; } }
 a:hover {
   background-color: #ddd;
   color: black; }
