@@ -13,8 +13,14 @@ body {
   text-align: center;
   line-height: 1.5rem;
   display: block;
-  border: 3px solid green;
+  border: 3px solid red;
   border-radius: 3px; }
+  body #wrapper,
+  body .container {
+    line-height: 140%;
+    max-width: 88rem;
+    margin-left: auto;
+    margin-right: auto; }
 
 div.logo {
   margin-right: 2rem; }
@@ -31,7 +37,8 @@ nav#fix-top {
   left: 2px;
   width: 99%;
   /* Full width */
-  z-index: 10;
+  z-index: 200;
+  backface-visibility: hidden;
   padding-left: 3px;
   padding-right: 3px;
   padding-top: 1rem;
@@ -78,6 +85,8 @@ div.logo {
   margin-right: 0.8rem; }
 
 @media screen and (min-width: 640px) {
+  nav#fix-top .topnav {
+    float: right; }
   nav#fix-top a {
     margin-left: 1rem;
     min-width: 5rem; }
@@ -98,14 +107,13 @@ a:hover {
  * old login.css
  */
 .container {
-  max-width: 800px; }
+  max-width: 1280px; }
 
 div#wrapper {
   position: relative;
-  margin: 0.5rem auto;
   /* for fix top? */
   margin-top: 4rem;
-  width: 90%;
+  width: 98%;
   text-align: left; }
 
 p, ul {
@@ -339,9 +347,17 @@ footer {
   form input {
     display: block;
     float: left; } }
-div#markdown p,
-div#intro p {
-  line-height: 140%; }
+div.qrcode {
+  text-align: center; }
+  div.qrcode img {
+    margin: auto; }
+
+div#markdown,
+div#intro {
+  line-height: 140%;
+  max-width: 88rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*tools*/
 .clr {

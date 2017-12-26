@@ -2,11 +2,13 @@
 <html lang="en">
 <!-- As temperory testing for ui styling and login page. 0203, 2015
      Finally, each page got more and more re-writing.    0201, 2016
+
+<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no />
 -->
 <head>
 <meta http-equiv="content-type" content="text/html" />
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1"  />
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="description" content="index, goodogood/goodagood" />
@@ -43,6 +45,7 @@
 </style>
 
 
+<!--
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 // google adsense block, but it not works, 2017 1109
@@ -51,6 +54,7 @@
   enable_page_level_ads: true
 });
 </script>
+-->
 
 
 <title> 
@@ -448,8 +452,8 @@ vim: set ft=markdown tw=78:
     </p>
   </footer>
 
-  <div>
   <h1> qr <a href="goodogood.com/">goodogood.com</a> </h1>
+  <div class="qrcode">
   <img src="images/qr.goodogood.com.600.jpeg" alt="qr_goodogood_com"  
         class="qr-img"
         style="max-height:80%;max-width:80%;height:auto;width:auto;"
@@ -458,7 +462,8 @@ vim: set ft=markdown tw=78:
   </div>
   <hr />
   <h1>digital url 214 184 </h1>
-  <div>
+
+  <div class="qrcode">
   <img src="images/qr.600.54.168.214.184.jpeg"
        style="max-height:80%;max-width:80%;height:auto;width:auto;"
        class="qr-img"
@@ -467,7 +472,7 @@ vim: set ft=markdown tw=78:
   </div>
 
   <h1>Story of a grain of sand </h1>
-  <div>
+  <div class="qrcode">
   <img src="images/qr.600.sand.story.github.jpeg"
        style="max-height:80%;max-width:80%;height:auto;width:auto;"
        class="qr-img"
@@ -484,18 +489,7 @@ vim: set ft=markdown tw=78:
 <script src="/static/js/jquery.inspect.js"></script>
 -->
 
-
-<script src="/jquery/dist/jquery.min.js"></script>
-<!--  <script src="/static/js/i18next-1.7.3.js"></script>  
-<script src="/static/bower_components/i18next/i18next.min.js"></script>
-<script src="/static/js/text-trans.js"></script>
-<script src="/js/text-trans.js"></script>
--->
-<script src="/blueimp-gallery/js/blueimp-gallery.min.js"></script>
-
 <script src="./bundle.js"></script>
-
-
 <script>
 //document.getElementById('galleryLinks').onclick = function (event) {
 //  event = event || window.event;
@@ -506,6 +500,18 @@ vim: set ft=markdown tw=78:
 //  blueimp.Gallery(links, options);
 //};
 </script>
+
+
+<script src="/jquery/dist/jquery.min.js"></script>
+<!--  <script src="/static/js/i18next-1.7.3.js"></script>  
+<script src="/static/bower_components/i18next/i18next.min.js"></script>
+<script src="/static/js/text-trans.js"></script>
+<script src="/js/text-trans.js"></script>
+-->
+<script src="/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+
+
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
