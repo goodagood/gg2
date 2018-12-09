@@ -47,6 +47,11 @@ app.use(session(sessionOpt));
 //app.use('/', index);
 //app.use('/users', users);
 
+// before all routes
+app.get('/', function(req, res){
+    res.redirect('/sept/intro.md.html');
+});
+
 
 // before all routes
 app.get('/before', function(req, res){
@@ -70,10 +75,11 @@ app.use(filter(opt));
 // app.use('/sysvalue', sysvalue);
 // const sysvalue = require("ui.vv/srv.express/thumbs.value/sysvalue.js");
 
-// use the package aftern a couple of: npm link 
-// ~/workspace/ui.vv/srv.express/thumbs.value
-const sysvalue = require("thumbs.value/sysvalue.js");
-app.use('/sysvalue', sysvalue);
+//// use the package aftern a couple of: npm link 
+//// ~/workspace/ui.vv/srv.express/thumbs.value
+//const sysvalue = require("thumbs.value/sysvalue.js");
+//app.use('/sysvalue', sysvalue);
+//2018 0915
 
 // simple response to check routing ok.
 app.get('/after', function(req, res){

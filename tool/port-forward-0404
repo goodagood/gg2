@@ -3,7 +3,10 @@
 # variables:
 P80="9080"
 P443="9443"
-DBIP="ubuntu@10.134.161.155"
+
+#DBIP="ubuntu@10.134.161.155"
+# This private IP gives trouble for port forwarding, change to public IP:
+DBIP="ubuntu@54.250.20.232"
 
 #################################################################
 #
